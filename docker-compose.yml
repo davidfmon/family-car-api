@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: family-car
+      POSTGRES_DB: family_car
     ports:
       - "5432:5432"
     volumes:
@@ -21,7 +21,7 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgresql+psycopg2://postgres:postgres@db:5432/family-car
+      DATABASE_URL: postgresql+psycopg2://postgres:postgres@db:5432/family_car
     ports:
       - "8000:8000"
     volumes:
